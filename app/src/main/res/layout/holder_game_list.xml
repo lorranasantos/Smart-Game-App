@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp"
+    app:cardCornerRadius="8dp"
+    android:background="@color/cardColor"
+    android:id="@+id/card_view_game_list">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="2dp"
+        android:background="@color/cardColor">
+
+
+        <ImageView
+            android:id="@+id/image_game"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_margin="5dp"
+            android:background="@drawable/overwatch"
+            android:orientation="horizontal"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/text_view_game_name"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="12dp"
+            android:text="Overwatch"
+            android:minEms="70"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textAlignment="center"
+            android:textAppearance="@style/gameTitleAppearence"
+            android:layout_marginTop="15dp"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/image_game" />
+
+        <TextView
+            android:id="@+id/text_view_price"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="70,00"
+            android:layout_margin="5dp"
+            android:textAlignment="center"
+            app:layout_constraintStart_toEndOf="@+id/image_game"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_game_name"
+            android:textAppearance="@style/priceAppearence"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="14dp"
+            app:layout_goneMarginEnd="8dp"
+            android:backgroundTint="@color/purple_200"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_price">
+
+            <Button
+                android:id="@+id/text_view_info"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:text="DETALHES"
+                android:textAlignment="center"
+                android:clickable="false"
+                android:backgroundTint="@color/purple_200"
+                app:layout_constraintStart_toEndOf="@+id/image_game"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textAppearance="@style/buttonBuyAppearence"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
