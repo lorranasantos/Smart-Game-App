@@ -16,5 +16,7 @@
 
 - Possuir o Backend https://github.com/lorranasantos/smart-games-back.git e inicializá-lo
 
+- Inserir o Ip da sua máquina no arquivo "UrlApi" em: src/main/java/com/example/smartgame/api/UrlApi.kt
+
 - Iniciar a Aplicação.
 
