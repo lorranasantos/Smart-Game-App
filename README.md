@@ -1,4 +1,4 @@
-# Aplicativo Smart Game
+# Aplicativo Smart Games
 
 ## Aplicação desenvolvida para a loja Smart Game Ltda.
 
